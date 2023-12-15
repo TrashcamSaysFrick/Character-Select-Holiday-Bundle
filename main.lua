@@ -12,49 +12,33 @@ local E_MODEL_HH = smlua_model_util_get_id("HH_geo")
 local TEXT_MOD_NAME = "Holiday Bundle"
 
 local VOICETABLE_WHITEY = {
-    [CHAR_SOUND_ATTACKED] = 'NES-Hit.ogg',
-    [CHAR_SOUND_DOH] = 'NES-Bump.ogg',
-    [CHAR_SOUND_DROWNING] = 'NES-Die.ogg',
-    [CHAR_SOUND_DYING] = 'NES-Die.ogg',
-    [CHAR_SOUND_GROUND_POUND_WAH] = 'NES-Squish.ogg',
-    [CHAR_SOUND_HAHA] = 'NES-1up.ogg',
-    [CHAR_SOUND_HAHA_2] = 'NES-1up.ogg',
-    [CHAR_SOUND_HERE_WE_GO] = 'NES-Flagpole.ogg',
+    [CHAR_SOUND_ATTACKED] = nil,
+    [CHAR_SOUND_DOH] = nil,
+    [CHAR_SOUND_DROWNING] = nil,
+    [CHAR_SOUND_DYING] = nil,
+    [CHAR_SOUND_GROUND_POUND_WAH] = nil,
+    [CHAR_SOUND_HAHA] = nil,
+    [CHAR_SOUND_HAHA_2] = nil,
+    [CHAR_SOUND_HERE_WE_GO] = nil,
     [CHAR_SOUND_HOOHOO] = 'EEE.mp3',
-    [CHAR_SOUND_MAMA_MIA] = 'This Might Be Harder Than I Thought.mp3',
-    [CHAR_SOUND_OKEY_DOKEY] = 'NES-1up.ogg',
-    [CHAR_SOUND_ON_FIRE] = 'NES-Enemy_Fire.ogg',
-    [CHAR_SOUND_OOOF] = 'NES-Hit.ogg',
-    [CHAR_SOUND_OOOF2] = 'NES-Hit.ogg',
+    [CHAR_SOUND_MAMA_MIA] = 'This-Might-Be-Harder-Than-I-Thought.mp3',
+    [CHAR_SOUND_OKEY_DOKEY] = nil,
+    [CHAR_SOUND_ON_FIRE] = nil,
+    [CHAR_SOUND_OOOF] = nil,
+    [CHAR_SOUND_OOOF2] = nil,
     [CHAR_SOUND_PUNCH_HOO] = 'AAA.mp3',
     [CHAR_SOUND_PUNCH_WAH] = 'Wah.mp3',
     [CHAR_SOUND_PUNCH_YAH] = 'YEAAAH.mp3',
-    [CHAR_SOUND_SO_LONGA_BOWSER] = 'Technical Foul.mp3',
-    [CHAR_SOUND_TWIRL_BOUNCE] = 'NES-Item.ogg',
-    [CHAR_SOUND_WAAAOOOW] = 'NES-Vine.ogg',
-    [CHAR_SOUND_WAH2] = 'NES-Kick.ogg',
-    [CHAR_SOUND_WHOA] = 'NES-Item.ogg',
-    [CHAR_SOUND_YAHOO] = 'Dont Forget.mp3',
-    [CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'Dont Forget.mp3', 'Wah.mp3', 'YEAAAH.mp3'},
+    [CHAR_SOUND_SO_LONGA_BOWSER] = 'Technical-Foul.mp3',
+    [CHAR_SOUND_TWIRL_BOUNCE] = nil,
+    [CHAR_SOUND_WAAAOOOW] = nil,
+    [CHAR_SOUND_WAH2] = nil,
+    [CHAR_SOUND_WHOA] = nil,
+    [CHAR_SOUND_YAHOO] = 'Dont-Forget.mp3',
+    [CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'Dont-Forget.mp3', 'Wah.mp3', 'YEAAAH.mp3'},
     [CHAR_SOUND_YAH_WAH_HOO] = {'YEAAAH.mp3', 'Wah.mp3', 'AAA.mp3'},
-    [CHAR_SOUND_YAWNING] = 'NES-Pause.ogg',
+    [CHAR_SOUND_YAWNING] = nil,
 }
-
--- function sample(name)
---     return sample2(name)
--- end
-
--- function stream(name)
---     return stream2(name)
--- end
-
--- function sample2(name)
---     return audio_sample_load(name)
--- end
-
--- function stream2(name)
---     return audio_stream_load(name)
--- end
 
 if _G.charSelectExists then
     CT_WHITEY = _G.charSelect.character_add("Whitey", {"Whitey Duvall from Adam Sandler's Eight Crazy Nights", "is now here."}, "Trashcam", {r = 255, g = 200, b = 200}, E_MODEL_WHITEY, CT_MARIO)
