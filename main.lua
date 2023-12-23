@@ -90,7 +90,7 @@ local VOICETABLE_JYUMI = {
 if _G.charSelectExists then
     CT_WHITEY = _G.charSelect.character_add("Whitey", {"Whitey Duvall from Adam Sandler's Eight Crazy Nights", "is now here."}, "Trashcam", {r = 255, g = 200, b = 200}, E_MODEL_WHITEY, CT_MARIO)
     CT_HH = _G.charSelect.character_add("HH", {"Save on everything at Christmas in July", "H-H-H-H-H-H-HHGregg", "Panasonic Blu-Ray, 99 dollars", "H-H-H-H-H-H-HHGregg", "32-inch LCD TV, 299", "LG 42-inch HDTV, 489", "Everything's on sale during Christmas in July", "H-H-H-H", "A snowball in July?", "HHGregg!"}, "Garlicker", {r = 255, g = 200, b = 200}, E_MODEL_HH, CT_MARIO)
-    CT_JYUMI = _G.charSelect.character_add("Whitey", {"A girl from New York.", "She seems to feel pretty", "jolly today."}, "Frijoles.z64", {r = 54, g = 91, b = 212}, E_MODEL_JYUMI, CT_LUIGI)
+    CT_JYUMI = _G.charSelect.character_add("Jolly Yumi", {"A girl from New York.", "She seems to feel pretty", "jolly today."}, "Frijoles.z64", {r = 54, g = 91, b = 212}, E_MODEL_JYUMI, CT_LUIGI)
     -- the following must be hooked for each character added
     _G.charSelect.character_add_voice(E_MODEL_WHITEY, VOICETABLE_WHITEY)
     hook_event(HOOK_CHARACTER_SOUND, function (m, sound)
